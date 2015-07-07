@@ -10,3 +10,4 @@
 /// <reference path="lib/jquery-validation/jquery.validate.js" />
 /// <reference path="lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" />
 /// <reference path="lib/d3/d3.js" />
+/// <reference path="lib/d3-tip/index.js" />

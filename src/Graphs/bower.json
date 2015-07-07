@@ -9,6 +9,7 @@
     "hammer.js": "2.0.4",
     "bootstrap-touch-carousel": "0.8.0",
     "angularjs": "1.4.1",
-    "d3": "3.5.5"
+    "d3": "3.5.5",
+    "d3-tip": "0.6.7"
   }
 }

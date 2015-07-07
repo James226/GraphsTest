@@ -2,7 +2,37 @@
     ViewBag.Title = "Home Page";
 }
 
+<style>
+    body {
+        font: 10px sans-serif;
+    }
+
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+</style>
+
 <div ng-app="graphs" ng-controller="HomeController">
-    <p>test: {{ test }}</p>
+    <div id="graph"></div>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Price</th>
+        </tr>
+        <tr ng-repeat="d in data">
+            <td>{{ d.date.toLocaleDateString() }}</td>
+            <td>{{ d.close }}</td>
+        </tr>
+    </table>
+    <button data-ng-click="splice()">Splice</button>
 </div>
 
